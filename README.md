@@ -1,6 +1,6 @@
 # Paper Replication Lab
 
-Maintained by **Yingbo Sun (orcarider7)**. The catalogue links twelve standalone public studies. Each includes the original sources and code for checking the results. [Citation information](CITATION.cff)
+Maintained by **Yingbo Sun (orcarider7)**. The catalogue links thirteen standalone public studies. Each includes the original sources and code for checking the results. [Citation information](CITATION.cff)
 
 ## Study catalogue
 
@@ -18,6 +18,7 @@ Quartiles refer to SCImago’s ranking for the publication year and the named su
 
 ## Further studies
 
+- [How much is knowing group size worth in distributed voting?](https://github.com/orcarider7/distributed-voting-group-sizes) — Reproduces Theorem 4.4 and Figure 8. With groups of one and three voters, knowing which group is smaller improves the best worst-case cost ratio from 8/3 to 9/4 among preassigned group lotteries. The note credits the 2011 weighting rule and derives an exact formula for uncertain sizes. [NeurIPS 2025 paper](https://arxiv.org/abs/2509.17134)
 - [Optimal rates for lattice diffusion with reset delays](https://github.com/orcarider7/lattice-reset-delays) — Reproduces the three first-passage curves in Figure 1 of Hartmann and Majumdar. With a target one step away, a delay charged only on physical returns yields a finite optimal rate exactly when the delay exceeds the inverse one-direction hop rate. [Physical Review E (2025)](https://doi.org/10.1103/1xkk-7q63)
 - [When does retrieval weight change the MMTEB leader?](https://github.com/orcarider7/mmteb-retrieval-weight) — Reproduces all 12 published category means. The two leading models tie when retrieval has about 67% of the weight and the other seven categories share the rest equally. [ICLR 2025, Table 2](https://proceedings.iclr.cc/paper_files/paper/2025/file/fc0e3f908a2116ba529ad0a1530a3675-Paper-Conference.pdf#page=8) · [Original lab directory](mmteb-retrieval-weight/)
 - [How rare are single-handed L-tetromino tilings?](https://github.com/orcarider7/l-tetromino-chirality) — Reproduces the nine counts in Table 3 of Lucy Martinez’s 2026 preprint. When both mirror shapes are allowed, at most $109^{-n}$ of the tilings of a fixed $5 \times 8n$ board use just one handedness. At $n=1$, exactly 4 of 436 tilings do. [Original preprint, Proposition 3](https://arxiv.org/html/2607.29369v2#S2.SS2) · [Original lab directory](l-tetromino-chirality/)
