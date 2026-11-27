@@ -4,6 +4,8 @@ A five-fold table in the public code release accompanying *A scaffold-aware repo
 
 ## Reconstructing the row
 
+The published abstract of Zheng, Ju and Hong (2026) reports the two numbers together, rounded to a gap of 0.158 log units with p = 0.031. The public release below allows the source of both rounded numbers to be traced to specific fold vectors. The paper also reports a separate bootstrap confidence interval, outside the scope of this check. [Publisher's abstract](https://doi.org/10.1080/00319104.2026.2727897)
+
 The source computes each model’s mean RMSE over the five folds, then chooses the lowest mean for each splitting method. Descriptor-based support-vector regression (SVR) wins on both. The same function constructs its paired test inputs by taking the best RMSE **within each fold** across all five models. The rules disagree on scaffold fold 0, where XGBoost wins. The other four scaffold folds and all five random folds select SVR. The relevant files in the author’s archive are `src/esol_project.py` lines 481–490, `results/tables/statistical_tests.csv` and `results/tables/cv_fold_metrics.csv`.
 
 | Vectors compared | Mean scaffold RMSE minus mean random RMSE | Two-sided paired t-test using the release’s fold numbering |

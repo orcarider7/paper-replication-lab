@@ -1,6 +1,18 @@
 # Paper Replication Lab
 
-Five small studies using published formulas, released scores and field observations. Each directory contains a cited research note and a Python verification script. The scripts require only the standard library. The two 2026 papers are listed first.
+Maintained by **Yingbo Sun (orcarider7)**. Eight studies use published formulas, released scores or field observations. Each directory contains a cited research note and a Python verification script using only the standard library. [Citation information](CITATION.cff)
+
+## Three recent papers checked
+
+Quartiles below are SCImago journal quartiles in the paper's publication year and the named subject category.
+
+| Paper | Check and result |
+| --- | --- |
+| [Nadji et al. (2025), restricted Arndt compositions](arndt-padovan/README.md) · [Q3, Discrete Mathematics and Combinatorics](https://www.scimagojr.com/journalsearch.php?q=23914&tip=sid) | Table 1 lists 11 of 12 objects of weight 10. The omitted row can be reconstructed exactly. A direct tiling encoding of the authors' Theorem 2 gives the combinatorial proof requested in Open Problem 3. |
+| [Erman and Turgut (2024), quantum scattering](quantum-scattering/README.md) · [Q2, Physics and Astronomy (miscellaneous)](https://www.scimagojr.com/journalsearch.php?q=26997&tip=sid) | A finite symmetric momentum window with cutoff ten times the well's inverse length recovers 93.65% of the diagonal density deficit. A separate scattering calculation tests sensitivity to a 1% change in depth. |
+| [AlphaProof and AlphaGeometry 2 (2025), IMO score](imo-2024-score-sensitivity/README.md) · [Q1, Multidisciplinary](https://www.scimagojr.com/journalsearch.php?q=21206&tip=sid) | Against 609 contestants' published scores, the combined systems' 28 points would tie for 59th. Omitting one problem at a time gives hypothetical competition ranks ranging from 9 to 164. |
+
+## Five earlier checks
 
 | Study | What was checked | Result |
 | --- | --- | --- |
@@ -22,6 +34,9 @@ python medicine/check.py
 python computer-science/verify.py
 python physics/check.py
 python biology/check_penguins.py
+python arndt-padovan/verify.py --fetch-table
+python quantum-scattering/verify.py
+python imo-2024-score-sensitivity/verify.py
 ```
 
 The data-based scripts accept a local file as an optional argument and check its checksum. Tree enumeration and sandpile stabilization run offline. Each note links its sources and explains how far the calculation supports the conclusion.
@@ -33,3 +48,5 @@ OpenAI Codex produced these AI-assisted notes and checks. The original researche
 For chemistry, all four reviews examined the distinction between the two model-selection rules. The 120 ways of matching fold labels quantify sensitivity to numbering. They do not supply a null distribution for a significance test. The paper’s separate bootstrap interval was outside the audit. For medicine, the 37 omissions describe a fixed set of tasks. No patient-level outcome was evaluated.
 
 The mathematical extensions are working results. Independent literature priority and formal peer review remain open.
+
+For the three recent checks, Astra, Sol, Terra and Gemini examined the arguments. Astra and Sol independently recovered the IMO ranks from the official results. Terra verified the journal's TeX table and ran the quantum script. Gemini reviewed the supplied formulas and counts without accessing the source data or executing code. Sol identified the Arndt tile code as the published recursive map in closed form. The Arndt note shows the equivalence explicitly. These are AI technical checks. The research notes have not received journal peer review.

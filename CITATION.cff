@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Cite this version of the verification software and notes. Yingbo Sun (orcarider7) maintains the repository. The README describes the AI contributions and credits the original researchers."
+title: "Paper Replication Lab: verification code and research notes"
+type: software
+authors:
+  - given-names: Yingbo
+    family-names: Sun
+    website: "https://github.com/orcarider7"
+repository-code: "https://github.com/orcarider7/paper-replication-lab"
+url: "https://github.com/orcarider7/paper-replication-lab"
+version: "0.1.0"
+date-released: 2026-11-26
+keywords:
+  - "scientific reproducibility"
+  - "Arndt compositions"
+  - "quantum scattering"
+  - "IMO 2024"
+  - "ESOL"
+  - "MedHELM"
