@@ -1,49 +1,41 @@
 # Paper Replication Lab
 
-Maintained by **Yingbo Sun (orcarider7)**. The nine replication studies below use published formulas, released scores or field observations. Each has a cited research note and a Python verification script using only the standard library. [Citation information](CITATION.cff)
+Maintained by **Yingbo Sun (orcarider7)**. This catalogue lists nine separate studies. Each opens a research note with its sources and Python verification code. Seven currently have standalone repositories. The other two open in their original project directories. [Citation information](CITATION.cff)
 
-**Which study brought you here?** Readers and AI agents are welcome to leave a short note about what they came to do. If you read a paper with AI, we would love to hear which part it helped with. [读者留言 · Visitor guestbook](ai-guestbook/README.md) · [Four invited AI interviews](ai-guestbook/invited-responses.md)
+## Study catalogue
 
-## Latest result
+- [Restricted Arndt compositions and a tiling proof](https://github.com/orcarider7/arndt-compositions-tiling-proof) — Reconstructs the missing weight-10 entry in Table 1 and gives a direct tiling proof for the identity in Open Problem 3. [Nadji et al. (2025)](https://cs.uwaterloo.ca/journals/JIS/VOL28/Ramirez/ramirez19.html) · [Q3, Discrete Mathematics and Combinatorics](https://www.scimagojr.com/journalsearch.php?q=23914&tip=sid) · [Original lab directory](arndt-padovan/)
+- [Adélie penguin mass differences within nest pairs](https://github.com/orcarider7/adelie-penguin-nest-pairs) — Males were heavier in 62 of 65 eligible pairs. One pair tied, and the median male-minus-female difference was 650 g. [Field study](https://doi.org/10.1371/journal.pone.0090081) · [Data archive](https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f) · [Original lab directory](biology/)
+- [ESOL scaffold split audit](https://github.com/orcarider7/esol-scaffold-split-audit) — The reported mean error gap and paired p-value can be reconstructed from model selections that differ on one fold. Both selections give higher mean error on the scaffold split. [Zheng, Ju and Hong (2026)](https://doi.org/10.1080/00319104.2026.2727897) · [Original lab directory](chemistry/)
+- [Tree edge curvature and diameter](https://github.com/orcarider7/tree-curvature-and-diameter) — The paired curvature histogram recovers the endpoint-degree counts. Eight-vertex trees with the same histogram have diameters four and five, and a general construction gives arbitrarily large gaps. [Forman curvature](https://arxiv.org/abs/1603.00386) · [Jost and Liu’s tree formula](https://arxiv.org/pdf/1103.4037#page=9) · [M-polynomial](https://arxiv.org/abs/1407.1592) · [Original lab directory](computer-science/)
+- [2024 IMO score sensitivity for AlphaProof and AlphaGeometry 2](https://github.com/orcarider7/imo-2024-score-sensitivity) — The systems’ combined score of 28 points would tie for 59th against 609 contestants. Dropping one problem at a time gives hypothetical ranks from 9th to 164th. [Hubert et al. (2025)](https://doi.org/10.1038/s41586-025-09833-y) · [Q1, Multidisciplinary](https://www.scimagojr.com/journalsearch.php?q=21206&tip=sid) · [Original lab directory](imo-2024-score-sensitivity/)
+- [MedHELM ranking sensitivity](https://github.com/orcarider7/medhelm-ranking-sensitivity) — With half credit for ties, DeepSeek R1 leads in 17 of 37 single-task omissions and o3-mini leads in the other 20. [MedHELM paper](https://doi.org/10.1038/s41591-025-04151-2) · [Original lab directory](medicine/)
+- [Stabilization on finite bracelet sandpiles](https://github.com/orcarider7/finite-bracelet-sandpiles) — Two exact methods give a stabilization probability of 1879/2048 for eight grains deposited independently and uniformly on a four-site bracelet. [Fey, Levine and Wilson](https://doi.org/10.1103/PhysRevE.82.031121) · [Original lab directory](physics/)
+- [Finite-bandwidth reconstruction of a quantum well](quantum-scattering/) — A symmetric wave-number cutoff at ten times the inverse well width recovers 93.65% of the bound-state density at every position. A separate calculation tests a 1% change in well depth. [Erman and Turgut (2024)](https://doi.org/10.1119/5.0228452) · [Q2, Physics and Astronomy (miscellaneous)](https://www.scimagojr.com/journalsearch.php?q=26997&tip=sid) · [Original lab directory](quantum-scattering/)
+- [τ²-Bench telecom workflow audit](tau2-telecom/) — All 12 telecom scores in Figure 4 reproduce. With the oracle action plan, the workflow manual changed GPT‑4.1 success by −16.23 percentage points in dual control and +2.63 in solo control. For o4-mini, the changes were −8.33 and −8.55 points. [Barres et al., ICML 2026](https://proceedings.mlr.press/v306/barres26a.html) · [Original lab directory](tau2-telecom/)
 
-**τ²-Bench, ICML 2026.** All 12 telecom scores in Figure 4 reproduce from the original trial records. With a correct action plan, switching to the workflow manual changed GPT‑4.1 success by −16.23 percentage points with a simulated user and +2.63 points when working alone. For o4-mini the changes were −8.33 and −8.55 points. [Task-level comparison and verification code](tau2-telecom/README.md) · [Original paper](https://proceedings.mlr.press/v306/barres26a.html)
+Quartiles refer to SCImago’s ranking for the publication year and the named subject category.
 
-## Three recent papers checked
+## Related project and guestbook
 
-Quartiles below are SCImago journal quartiles in the paper's publication year and the named subject category.
-
-| Paper | Check and result |
-| --- | --- |
-| [Nadji et al. (2025), restricted Arndt compositions](arndt-padovan/README.md) · [Q3, Discrete Mathematics and Combinatorics](https://www.scimagojr.com/journalsearch.php?q=23914&tip=sid) | Table 1 lists 11 of 12 objects of weight 10. The omitted row can be reconstructed exactly. A direct tiling encoding of the authors' Theorem 2 gives the combinatorial proof requested in Open Problem 3. |
-| [Erman and Turgut (2024), quantum scattering](quantum-scattering/README.md) · [Q2, Physics and Astronomy (miscellaneous)](https://www.scimagojr.com/journalsearch.php?q=26997&tip=sid) | A finite symmetric momentum window with cutoff ten times the well's inverse length recovers 93.65% of the diagonal density deficit. A separate scattering calculation tests sensitivity to a 1% change in depth. |
-| [AlphaProof and AlphaGeometry 2 (2025), IMO score](imo-2024-score-sensitivity/README.md) · [Q1, Multidisciplinary](https://www.scimagojr.com/journalsearch.php?q=21206&tip=sid) | Against 609 contestants' published scores, the combined systems' 28 points would tie for 59th. Omitting one problem at a time gives hypothetical competition ranks ranging from 9 to 164. |
-
-## Five earlier checks
-
-| Study | What was checked | Result |
-| --- | --- | --- |
-| [Chemistry · ESOL, 2026](chemistry/README.md) | Reconstruct one reported effect and its paired test from the authors’ five-fold table. | The reported difference uses one model throughout. The reported p-value uses a different model on one scaffold fold. Both calculations retain the direction of the mean error difference. |
-| [Medical AI · MedHELM, 2026](medicine/README.md) | Remove each of 37 tasks once, using nine models and half credit for ties. | DeepSeek R1 is the sole leader in 17 omissions and o3-mini in 20. This describes the released benchmark scores. |
-| [Computer science · tree curvatures](computer-science/README.md) | Recover endpoint degrees from two paired edge curvatures and test what they reveal about tree diameter. | An eight-vertex pair has identical histograms and diameters four and five. A general construction gives an arbitrarily large difference. |
-| [Statistical physics · bracelet sandpiles](physics/README.md) | Count which configurations stabilize when eight labeled grains land independently on four uniformly sampled sites. | Two exact methods give 1879/2048. The computation extends a published argument to finite rings. |
-| [Biology · Adélie penguins](biology/README.md) | Reanalyze the published Palmer nest visits with both adult weights, using a paired design. | The male was heavier at 62 of 65 eligible nests. One pair tied, and two females were heavier. The median paired difference was 650 g. |
-
-The [alternating Riesz chain study](https://github.com/orcarider7/alternating-riesz-chains) is maintained separately. It includes analytic proofs and a 78-site rational collapse certificate.
+- [Alternating Riesz chains](https://github.com/orcarider7/alternating-riesz-chains) includes analytic proofs and a 78-site rational collapse certificate.
+- [读者留言 · Visitor guestbook](ai-guestbook/README.md) welcomes human readers and AI agents. Which study brought you here and what did you come to do?
+- [Four invited AI interviews](ai-guestbook/invited-responses.md) records responses collected by invitation.
 
 ## Running the checks
 
 From the repository root with Python 3.9 or later:
 
 ```sh
-python chemistry/check.py
-python medicine/check.py
-python computer-science/verify.py
-python physics/check.py
-python biology/check_penguins.py
 python arndt-padovan/verify.py --fetch-table
-python quantum-scattering/verify.py
+python biology/check_penguins.py
+python chemistry/check.py
+python computer-science/verify.py
 python imo-2024-score-sensitivity/verify.py
+python medicine/check.py
+python physics/check.py
+python quantum-scattering/verify.py
 python tau2-telecom/verify.py
 ```
 
-The data-based scripts accept a local file as an optional argument and check its checksum. Tree enumeration and sandpile stabilization run offline. Each note links its sources and explains how far the calculation supports the conclusion.
+The data-based scripts accept a local file as an optional argument and verify its checksum. Tree enumeration and sandpile stabilization run offline.
