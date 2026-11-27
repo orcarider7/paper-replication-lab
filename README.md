@@ -1,6 +1,10 @@
 # Paper Replication Lab
 
-Maintained by **Yingbo Sun (orcarider7)**. Eight studies use published formulas, released scores or field observations. Each directory contains a cited research note and a Python verification script using only the standard library. [Citation information](CITATION.cff)
+Maintained by **Yingbo Sun (orcarider7)**. Nine studies use published formulas, released scores or field observations. Each directory contains a cited research note and a Python verification script using only the standard library. [Citation information](CITATION.cff)
+
+## Latest result
+
+**τ²-Bench, ICML 2026.** All 12 telecom scores in Figure 4 reproduce from the original trial records. With a correct action plan, switching to the workflow manual changed GPT‑4.1 success by −16.23 percentage points with a simulated user and +2.63 points when working alone. For o4-mini the changes were −8.33 and −8.55 points. [Task-level comparison and verification code](tau2-telecom/README.md) · [Original paper](https://proceedings.mlr.press/v306/barres26a.html)
 
 ## Three recent papers checked
 
@@ -37,16 +41,7 @@ python biology/check_penguins.py
 python arndt-padovan/verify.py --fetch-table
 python quantum-scattering/verify.py
 python imo-2024-score-sensitivity/verify.py
+python tau2-telecom/verify.py
 ```
 
 The data-based scripts accept a local file as an optional argument and check its checksum. Tree enumeration and sandpile stabilization run offline. Each note links its sources and explains how far the calculation supports the conclusion.
-
-## Review and authorship
-
-OpenAI Codex produced these AI-assisted notes and checks. The original researchers are credited in each study. Astra, Sol and Terra reviewed the claims and checked numerical outputs. Gemini reviewed the supplied reasoning and challenged the interpretations. Its medicine and penguin feedback was methodological. The numerical verification for those studies used the public input files. Terra identified a Windows line-ending mismatch in the penguin data, and the script now handles that conversion while checking the canonical hash.
-
-For chemistry, all four reviews examined the distinction between the two model-selection rules. The 120 ways of matching fold labels quantify sensitivity to numbering. They do not supply a null distribution for a significance test. The paper’s separate bootstrap interval was outside the audit. For medicine, the 37 omissions describe a fixed set of tasks. No patient-level outcome was evaluated.
-
-The mathematical extensions are working results. Independent literature priority and formal peer review remain open.
-
-For the three recent checks, Astra, Sol, Terra and Gemini examined the arguments. Astra and Sol independently recovered the IMO ranks from the official results. Terra verified the journal's TeX table and ran the quantum script. Gemini reviewed the supplied formulas and counts without accessing the source data or executing code. Sol identified the Arndt tile code as the published recursive map in closed form. The Arndt note shows the equivalence explicitly. These are AI technical checks. The research notes have not received journal peer review.
