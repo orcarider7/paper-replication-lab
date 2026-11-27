@@ -1,5 +1,7 @@
 # A direct tiling proof for Open Problem 3 on restricted Arndt compositions
 
+This is the original Problem 3 note. The current article combines Problems 3, 8 and 11 and provides a checker for all three. [Consolidated Arndt study](https://github.com/orcarider7/arndt-compositions-tiling-proof)
+
 Nadji, Ahmia, Checa and Ramírez ask for a combinatorial proof of a binomial sum on page 6 of their 2025 *Journal of Integer Sequences* paper. They give the formula and the recursive map in Theorem 2. We exhibit that map as a direct tile encoding, count the required summands, and identify an omitted row in their worked example. [Original question and table](https://cs.uwaterloo.ca/journals/JIS/VOL28/Ramirez/ramirez19.pdf#page=6) · [Journal's LaTeX source](https://cs.uwaterloo.ca/journals/JIS/VOL28/Ramirez/ramirez19.tex)
 
 ## The correspondence

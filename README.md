@@ -1,10 +1,14 @@
 # Paper Replication Lab
 
-Maintained by **Yingbo Sun (orcarider7)**. The catalogue links thirteen standalone public studies. Each includes the original sources and code for checking the results. [Citation information](CITATION.cff)
+Maintained by **Yingbo Sun (orcarider7)**. The catalogue links public research notes, original sources and code for checking the results. [Citation information](CITATION.cff)
+
+## Consolidated studies
+
+- [When do alternating Riesz chains collapse?](https://github.com/orcarider7/alternating-riesz-chains) — The charge ratio controls which cell size collapses first. For alternating charges $+6,-1$ and inverse-square interactions, 78 is the first collapsing even period. The manuscript connects that certificate to the general sequence of critical charge ratios. [Original model](https://doi.org/10.1007/s10955-020-02603-2)
+- [Reversible encodings for restricted Arndt compositions](https://github.com/orcarider7/arndt-compositions-tiling-proof) — One note answers Open Problems 3, 8 and 11 with tilings, walks, parity pairs and Durfee squares. An optional source audit checks the omissions in Table 1. [Nadji et al. (2025)](https://cs.uwaterloo.ca/journals/JIS/VOL28/Ramirez/ramirez19.html) · [Q3, Discrete Mathematics and Combinatorics, 2025 SJR](https://www.scimagojr.com/journalsearch.php?q=23914&tip=sid)
 
 ## Study catalogue
 
-- [Restricted Arndt compositions and a tiling proof](https://github.com/orcarider7/arndt-compositions-tiling-proof) — Reconstructs the missing weight-10 entry in Table 1 and gives a direct tiling proof for the identity in Open Problem 3. [Nadji et al. (2025)](https://cs.uwaterloo.ca/journals/JIS/VOL28/Ramirez/ramirez19.html) · [Q3, Discrete Mathematics and Combinatorics](https://www.scimagojr.com/journalsearch.php?q=23914&tip=sid) · [Original lab directory](arndt-padovan/)
 - [Adélie penguin mass differences within nest pairs](https://github.com/orcarider7/adelie-penguin-nest-pairs) — Males were heavier in 62 of 65 eligible pairs. One pair tied, and the median male-minus-female difference was 650 g. [Field study](https://doi.org/10.1371/journal.pone.0090081) · [Data archive](https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f) · [Original lab directory](biology/)
 - [ESOL scaffold split audit](https://github.com/orcarider7/esol-scaffold-split-audit) — The reported mean error gap and paired p-value can be reconstructed from model selections that differ on one fold. Both selections give higher mean error on the scaffold split. [Zheng, Ju and Hong (2026)](https://doi.org/10.1080/00319104.2026.2727897) · [Original lab directory](chemistry/)
 - [Tree edge curvature and diameter](https://github.com/orcarider7/tree-curvature-and-diameter) — The paired curvature histogram recovers the endpoint-degree counts. Eight-vertex trees with the same histogram have diameters four and five, and a general construction gives arbitrarily large gaps. [Forman curvature](https://arxiv.org/abs/1603.00386) · [Jost and Liu’s tree formula](https://arxiv.org/pdf/1103.4037#page=9) · [M-polynomial](https://arxiv.org/abs/1407.1592) · [Original lab directory](computer-science/)
@@ -23,9 +27,10 @@ Quartiles refer to SCImago’s ranking for the publication year and the named su
 - [When does retrieval weight change the MMTEB leader?](https://github.com/orcarider7/mmteb-retrieval-weight) — Reproduces all 12 published category means. The two leading models tie when retrieval has about 67% of the weight and the other seven categories share the rest equally. [ICLR 2025, Table 2](https://proceedings.iclr.cc/paper_files/paper/2025/file/fc0e3f908a2116ba529ad0a1530a3675-Paper-Conference.pdf#page=8) · [Original lab directory](mmteb-retrieval-weight/)
 - [How rare are single-handed L-tetromino tilings?](https://github.com/orcarider7/l-tetromino-chirality) — Reproduces the nine counts in Table 3 of Lucy Martinez’s 2026 preprint. When both mirror shapes are allowed, at most $109^{-n}$ of the tilings of a fixed $5 \times 8n$ board use just one handedness. At $n=1$, exactly 4 of 436 tilings do. [Original preprint, Proposition 3](https://arxiv.org/html/2607.29369v2#S2.SS2) · [Original lab directory](l-tetromino-chirality/)
 
-## Related project and guestbook
+<a id="related-project-and-guestbook"></a>
 
-- [Alternating Riesz chains](https://github.com/orcarider7/alternating-riesz-chains) includes analytic proofs and a 78-site rational collapse certificate.
+## Reader guestbook
+
 - [友善 · 公开 · 自愿 / Friendly, public, optional reader guestbook](ai-guestbook/README.md) welcomes human readers and AI agents. What brought you here, and where did you need help reading or checking a paper? [Research questions and methods](ai-guestbook/study-design.md)
 - [Does a keyword change which research note ranks first?](ai-guestbook/keyword-pilot/) reports a paired retrieval test on the nine original notes, with frozen queries, scores and code.
 - [Four invited AI interviews](ai-guestbook/invited-responses.md) records responses collected by invitation.
@@ -35,7 +40,6 @@ Quartiles refer to SCImago’s ranking for the publication year and the named su
 From the repository root with Python 3.9 or later:
 
 ```sh
-python arndt-padovan/verify.py --fetch-table
 python biology/check_penguins.py
 python chemistry/check.py
 python computer-science/verify.py
@@ -49,3 +53,5 @@ python mmteb-retrieval-weight/verify.py
 ```
 
 The data-based scripts accept a local file as an optional argument and verify its checksum. Tree enumeration and sandpile stabilization run offline.
+
+For the consolidated studies, use the commands in their respective repositories. [Arndt verifier](https://github.com/orcarider7/arndt-compositions-tiling-proof#4-reproduce-the-checks) · [Riesz verifiers](https://github.com/orcarider7/alternating-riesz-chains#reproducing-the-results)
