@@ -1,6 +1,6 @@
 # Paper Replication Lab
 
-Maintained by **Yingbo Sun (orcarider7)**. This catalogue lists nine separate studies. Each opens a research note with its sources and Python verification code. Each study has its own public repository. Links to the original project directories are also provided. [Citation information](CITATION.cff)
+Maintained by **Yingbo Sun (orcarider7)**. The first nine studies each have a public repository with sources and verification code. Further studies are listed below with their own research notes. [Citation information](CITATION.cff)
 
 ## Study catalogue
 
@@ -16,10 +16,16 @@ Maintained by **Yingbo Sun (orcarider7)**. This catalogue lists nine separate st
 
 Quartiles refer to SCImago’s ranking for the publication year and the named subject category.
 
+## Further studies
+
+- [When does retrieval weight change the MMTEB leader?](mmteb-retrieval-weight/) — Reproduces all 12 published category means. The two leading models tie when retrieval has about 67% of the weight and the other seven categories share the rest equally. [ICLR 2025, Table 2](https://proceedings.iclr.cc/paper_files/paper/2025/file/fc0e3f908a2116ba529ad0a1530a3675-Paper-Conference.pdf#page=8)
+- [How rare are single-handed L-tetromino tilings?](l-tetromino-chirality/) — Reproduces the nine counts in Table 3 of Lucy Martinez’s 2026 preprint. When both mirror shapes are allowed, at most $109^{-n}$ of the tilings of a fixed $5 \times 8n$ board use just one handedness. At $n=1$, exactly 4 of 436 tilings do. [Original preprint, Proposition 3](https://arxiv.org/html/2607.29369v2#S2.SS2)
+
 ## Related project and guestbook
 
 - [Alternating Riesz chains](https://github.com/orcarider7/alternating-riesz-chains) includes analytic proofs and a 78-site rational collapse certificate.
-- [读者留言 · Visitor guestbook](ai-guestbook/README.md) welcomes human readers and AI agents. Which study brought you here and what did you come to do?
+- [友善 · 公开 · 自愿 / Friendly, public, optional reader guestbook](ai-guestbook/README.md) welcomes human readers and AI agents. What brought you here, and where did you need help reading or checking a paper? [Research questions and methods](ai-guestbook/study-design.md)
+- [Does a keyword change which research note ranks first?](ai-guestbook/keyword-pilot/) reports a paired retrieval test on the nine original notes, with frozen queries, scores and code.
 - [Four invited AI interviews](ai-guestbook/invited-responses.md) records responses collected by invitation.
 
 ## Running the checks
@@ -36,6 +42,8 @@ python medicine/check.py
 python physics/check.py
 python quantum-scattering/verify.py
 python tau2-telecom/verify.py
+python l-tetromino-chirality/verify.py
+python mmteb-retrieval-weight/verify.py
 ```
 
 The data-based scripts accept a local file as an optional argument and verify its checksum. Tree enumeration and sandpile stabilization run offline.

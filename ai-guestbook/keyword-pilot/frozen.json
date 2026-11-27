@@ -1,0 +1,124 @@
+{
+  "documents": [
+    {
+      "id": "arndt-compositions-tiling-proof",
+      "title": "A direct tiling proof for Open Problem 3 on restricted Arndt compositions",
+      "snippet": "Nadji, Ahmia, Checa and Ramírez ask for a combinatorial proof of a binomial sum on page 6 of their 2025 *Journal of Integer Sequences* paper. They give the formula and the recursive map in Theorem 2. We exhibit that map as a direct tile encoding, count the required summands, and identify an omitted row in their worked example.",
+      "source": "tmp/study-repo-prep/arndt-compositions-tiling-proof/README.md",
+      "source_sha256": "245d09e090cbc3c647d77ceaefad3a7719217cb5d59e9bb66f6a96f5346904c0"
+    },
+    {
+      "id": "imo-2024-score-sensitivity",
+      "title": "How much does the 2024 IMO score comparison depend on one problem?",
+      "snippet": "Hubert and colleagues report that AlphaProof solved problems 1, 2 and 6 of the 2024 International Mathematical Olympiad (IMO), and AlphaGeometry 2 solved problem 4. The combined system received seven points on each of those four and zero on the other two. This note reconstructs its silver-medal-equivalent score, then removes each problem in turn from both the system and all 609 contestants. The paper was published in *Nature* in 2025. SCImago lists the journal in Q1 for Multidisciplinary in 2025.",
+      "source": "tmp/study-repo-prep/imo-2024-score-sensitivity/README.md",
+      "source_sha256": "d2aab2ef5dfa6154f36c78f08ed760e11c0184c328db18fdff81480e09434b2f"
+    },
+    {
+      "id": "esol-scaffold-split-audit",
+      "title": "Which models enter the ESOL split comparison?",
+      "snippet": "A five-fold table in the public code release accompanying *A scaffold-aware reporting protocol for reliable aqueous solubility prediction using the Estimated SOLubility (ESOL) benchmark* combines a mean error difference from one model-selection rule and a paired test from another. This note reconstructs the released CSV row from the individual root mean squared errors (RMSE). Both selection rules give higher mean RMSE on the scaffold split.",
+      "source": "tmp/study-repo-prep/esol-scaffold-split-audit/README.md",
+      "source_sha256": "74e8b1c28f08a1c8244e5c760218b688fb5b5306cbbf7cc5474e41d4a2e03bd8"
+    },
+    {
+      "id": "medhelm-ranking-sensitivity",
+      "title": "Can one benchmark change the leader in the MedHELM paper?",
+      "snippet": "MedHELM appeared in *Nature Medicine* on 20 January 2026. Its Table 1 reports a mean win rate of 0.66 for each of the two leading models, DeepSeek R1 and o3-mini. The authors' paper-specific score file gives 0.662 and 0.660. Recomputing pairwise wins from all 37 benchmark columns and leaving out one benchmark at a time, **DeepSeek R1 leads in 17 of 37 omissions and o3-mini leads in the other 20** under half credit for ties. Both models refer to the versions in the paper.",
+      "source": "tmp/study-repo-prep/medhelm-ranking-sensitivity/README.md",
+      "source_sha256": "6a47d7378722d58fbaae729c7b2af2d7d67ad72db0126bc47b017ed5c8fe45be"
+    },
+    {
+      "id": "tree-curvature-and-diameter",
+      "title": "What can two edge curvatures recover about a tree?",
+      "snippet": "Research note, 26 November 2026. On a finite unweighted tree, the histogram of the **paired** Forman and zero-idleness Ollivier curvatures recovers precisely the counts of edges of each endpoint-degree pair. Eight vertices suffice for two trees to share this histogram and have different diameters. A family with just two branching vertices makes the diameter gap arbitrarily large.",
+      "source": "tmp/study-repo-prep/tree-curvature-and-diameter/README.md",
+      "source_sha256": "86faac940df1a358c326d454c05df1bc66fc1147774344e0c75c88fb7ae808b4"
+    },
+    {
+      "id": "finite-bracelet-sandpiles",
+      "title": "Exact stabilization probabilities on finite bracelet sandpiles",
+      "snippet": "Fey, Levine and Wilson studied a cycle with each edge doubled, which they called the *bracelet*. Their bracelet calculation gives the infinite-bracelet threshold density (about 2.496608) and stationary density (2.5). Their proof groups grains into mobile pairs and a fixed remainder at each vertex. Here we use that reduction to answer a finite-size question. If exactly eight grains are independently dropped at uniformly chosen vertices of a four-site bracelet with no sink, what is the probability of stabilization? The exact answer is **1879/2048**.",
+      "source": "tmp/study-repo-prep/finite-bracelet-sandpiles/README.md",
+      "source_sha256": "d2e7f1efb4a49be418c6f71d1851846e48c58cf974e6bde6b9fd86429937e583"
+    },
+    {
+      "id": "adelie-penguin-nest-pairs",
+      "title": "Does the male Adélie weigh more than his nest mate?",
+      "snippet": "In the Palmer Archipelago sample, the male weighed more at 62 of 65 eligible Adélie nest visits, the female weighed more at two, and one pair tied. The median difference was 650 g. Every island and season combination had a positive average within-pair difference.",
+      "source": "tmp/study-repo-prep/adelie-penguin-nest-pairs/README.md",
+      "source_sha256": "64c3e42f2187a3a34a6d914a8876ca940b0a7c4cb5bf71a1dd00a016d6fe545f"
+    },
+    {
+      "id": "quantum-well-bandwidth",
+      "title": "How much of a bound state can a finite momentum window recover?",
+      "snippet": "Fatih Erman and O. Teoman Turgut reconstructed the bound-state projector of a one-dimensional reflectionless quantum well from its continuum states. We check the diagonal of their identity and compute the fraction recovered when the continuum integral stops at a finite wave number. At a cutoff ten times the inverse width, the reconstruction recovers 93.65% of the bound-state density at every position. A separate scattering calculation tests the effect of changing the well depth.",
+      "source": "tmp/study-repo-prep/quantum-well-bandwidth/README.md",
+      "source_sha256": "097e5d0860e45a6a9c3b29b8d1eb67f7ae4af051cbd043d67563f50a615205c0"
+    },
+    {
+      "id": "tau2-telecom-workflow-audit",
+      "title": "When does extra workflow guidance help a telecom agent?",
+      "snippet": "In τ²-Bench, a model troubleshoots a simulated customer's phone. The model can either guide the customer while each controls different tools (**dual**) or receive a ticket and operate all the tools itself (**solo**). An optional oracle plan supplies the correct sequence of actions. The paper reports that, with this plan, replacing the original manual with more detailed workflow instructions lowered success for both models in dual control. We reproduced that result and checked the corresponding solo runs. **GPT‑4.1's workflow change went from −16.23 percentage points in dual control to +2.63 in solo control. For o4-mini, success fell by about eight points in both.**",
+      "source": "tmp/study-repo-prep/tau2-telecom-workflow-audit/README.md",
+      "source_sha256": "51dbb0b08259416f2570f070bfe2032ca3e1227b1a1fec33da5ea771edd75548"
+    }
+  ],
+  "pairs": [
+    {
+      "target": "arndt-compositions-tiling-proof",
+      "neutral": "How does the proof count restricted integer compositions?",
+      "cue": "Arndt",
+      "keyword": "How does the proof count restricted integer compositions? Arndt"
+    },
+    {
+      "target": "imo-2024-score-sensitivity",
+      "neutral": "What happens to the medal comparison when one problem is dropped?",
+      "cue": "IMO",
+      "keyword": "What happens to the medal comparison when one problem is dropped? IMO"
+    },
+    {
+      "target": "esol-scaffold-split-audit",
+      "neutral": "How does partitioning by molecular structure affect prediction error?",
+      "cue": "ESOL",
+      "keyword": "How does partitioning by molecular structure affect prediction error? ESOL"
+    },
+    {
+      "target": "medhelm-ranking-sensitivity",
+      "neutral": "Can leaving out a test change who tops the medical model leaderboard?",
+      "cue": "MedHELM",
+      "keyword": "Can leaving out a test change who tops the medical model leaderboard? MedHELM"
+    },
+    {
+      "target": "tree-curvature-and-diameter",
+      "neutral": "Can local edge geometry determine the longest path in a graph?",
+      "cue": "curvature",
+      "keyword": "Can local edge geometry determine the longest path in a graph? curvature"
+    },
+    {
+      "target": "finite-bracelet-sandpiles",
+      "neutral": "What fraction of random grain drops settle on a cycle?",
+      "cue": "bracelet",
+      "keyword": "What fraction of random grain drops settle on a cycle? bracelet"
+    },
+    {
+      "target": "adelie-penguin-nest-pairs",
+      "neutral": "How much heavier is the male than its partner at the nest?",
+      "cue": "Adélie",
+      "keyword": "How much heavier is the male than its partner at the nest? Adélie"
+    },
+    {
+      "target": "quantum-well-bandwidth",
+      "neutral": "How much of a localized state can be recovered by limiting wave numbers?",
+      "cue": "projector",
+      "keyword": "How much of a localized state can be recovered by limiting wave numbers? projector"
+    },
+    {
+      "target": "tau2-telecom-workflow-audit",
+      "neutral": "Do longer instructions help a phone support assistant sharing control?",
+      "cue": "workflow",
+      "keyword": "Do longer instructions help a phone support assistant sharing control? workflow"
+    }
+  ],
+  "metric": "Top-1 accuracy, score ties resolved by lexicographic document ID; inspect per-pair target rank and ties."
+}

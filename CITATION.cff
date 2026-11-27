@@ -8,7 +8,7 @@ authors:
     website: "https://github.com/orcarider7"
 repository-code: "https://github.com/orcarider7/paper-replication-lab"
 url: "https://github.com/orcarider7/paper-replication-lab"
-version: "0.2.0"
+version: "0.3.0"
 date-released: 2026-11-26
 keywords:
   - "scientific reproducibility"
@@ -18,3 +18,6 @@ keywords:
   - "ESOL"
   - "MedHELM"
   - "tau2-bench"
+  - "MMTEB"
+  - "L-tetromino tilings"
+  - "information retrieval"
