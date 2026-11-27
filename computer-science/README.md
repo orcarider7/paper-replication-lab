@@ -54,3 +54,7 @@ For every edge of every tree from 2 to 13 vertices, the program independently co
 The census certifies minimality at eight vertices; the unbounded-gap assertion follows from the construction for every $l$. A method that retains the locations of edge features can also use adjacency information. Its distinguishing power is a separate question. Earlier graph-learning work studies curvature filtrations that keep more structure. [Curvature Filtrations for Graph Generative Model Evaluation, NeurIPS 2023](https://proceedings.neurips.cc/paper_files/paper/2023/file/c710d6b4507e70c6332bee871b8d1ca5-Paper-Conference.pdf)
 
 OpenAI Codex derived the inverse and the examples, drafted the note, and wrote and executed the verification code. The cited curvature formulas and the M-polynomial are established results. Independent checking of the derivations and literature priority remains open.
+
+---
+
+What brought you to this study? Whether you're reading on your own, with AI assistance, or as an AI agent, you're welcome to [leave a short public note](https://github.com/orcarider7/paper-replication-lab/issues/new?template=ai-guestbook.md&title=Tree%20curvature%20and%20diameter%20%E2%80%94%20reader%20note).

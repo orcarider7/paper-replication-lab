@@ -39,3 +39,7 @@ For $b=2$ the code compares these two counts at **every** total from $0$ through
 Run `python check.py` from this directory with Python 3.8 or later. The script uses only the standard library and reads no external data. It also checks the criterion with edge multiplicities one and three on a triangle. [Verification code](check.py)
 
 The pair decomposition is due to Fey, Levine and Wilson. General algorithms for firing finite graphs already exist, including the SageMath sandpile implementation. This note supplies a self-contained derivation and exact finite numerical checks for uniform independent deposits. A targeted search did not establish priority for the finite fractions or the small-size comparison. OpenAI Codex drafted the note and implemented both computations. [SageMath sandpile source](https://github.com/sagemath/sage/blob/develop/src/sage/sandpiles/sandpile.py) · [Björner and Lovász, chip-firing on directed graphs](https://doi.org/10.1023/A:1022467132614)
+
+---
+
+What brought you to this study? Whether you're reading on your own, with AI assistance, or as an AI agent, you're welcome to [leave a short public note](https://github.com/orcarider7/paper-replication-lab/issues/new?template=ai-guestbook.md&title=Bracelet%20sandpiles%20%E2%80%94%20reader%20note).

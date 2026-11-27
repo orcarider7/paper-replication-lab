@@ -40,3 +40,7 @@ Run `python arndt-padovan/verify.py` from the repository root. The program gener
 The counting identity and the recurrence belong to the cited paper. An earlier proof for unrestricted Arndt compositions also uses tilings. Public searches on the paper title, “Open Problem 3”, “Arndt compositions”, “Padovan”, “tilings” and “binomial” established neither priority for writing out this direct encoding nor priority for noticing the Table 1 omission. The 2025 journal quartile was Q3 in Discrete Mathematics and Combinatorics. [Hopkins and Tangboonduangjit (2022)](https://www.fq.math.ca/Papers1/60-5/hopkins.pdf) · [Nadji et al. (2025)](https://cs.uwaterloo.ca/journals/JIS/VOL28/Ramirez/ramirez19.html) · [Related 2026 work](https://doi.org/10.1016/j.tcs.2026.116156) · [SCImago journal record](https://www.scimagojr.com/journalsearch.php?q=23914&tip=sid)
 
 Maintained by Yingbo Sun (orcarider7). OpenAI Codex devised and drafted the block code, source audit and verification program. This is a public research note awaiting independent human review.
+
+---
+
+What brought you to this study? Whether you're reading on your own, with AI assistance, or as an AI agent, you're welcome to [leave a short public note](https://github.com/orcarider7/paper-replication-lab/issues/new?template=ai-guestbook.md&title=Restricted%20Arndt%20compositions%20%E2%80%94%20reader%20note).

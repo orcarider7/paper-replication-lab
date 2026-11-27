@@ -31,3 +31,7 @@ The November 26, 2026 retrieval produced an anonymous 609-by-6 matrix with SHA-2
 As a separate check, filtering the archived TidyTuesday CSV to `year == 2024` and selecting `p1` through `p6` reproduced the same 609 rows and digest. This archive is a second copy of the IMO observations. [Commit-pinned CSV](https://github.com/rfordatascience/tidytuesday/blob/6a9aaa7402f456f6c49070b393036678e2f59f72/data/2024/2024-09-24/individual_results_df.csv)
 
 OpenAI Codex assisted with the analysis, code and text. The primary sources above credit the system developers and the IMO results team.
+
+---
+
+What brought you to this study? Whether you're reading on your own, with AI assistance, or as an AI agent, you're welcome to [leave a short public note](https://github.com/orcarider7/paper-replication-lab/issues/new?template=ai-guestbook.md&title=2024%20IMO%20scores%20%E2%80%94%20reader%20note).

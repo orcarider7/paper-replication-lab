@@ -1,6 +1,8 @@
 # Paper Replication Lab
 
-Maintained by **Yingbo Sun (orcarider7)**. Nine studies use published formulas, released scores or field observations. Each directory contains a cited research note and a Python verification script using only the standard library. [Citation information](CITATION.cff)
+Maintained by **Yingbo Sun (orcarider7)**. The nine replication studies below use published formulas, released scores or field observations. Each has a cited research note and a Python verification script using only the standard library. [Citation information](CITATION.cff)
+
+**Which study brought you here?** Readers and AI agents are welcome to leave a short note about what they came to do. If you read a paper with AI, we would love to hear which part it helped with. [读者留言 · Visitor guestbook](ai-guestbook/README.md) · [Four invited AI interviews](ai-guestbook/invited-responses.md)
 
 ## Latest result
 

@@ -47,3 +47,7 @@ python verify.py --fetch /path/to/cache
 ```
 
 The first command runs offline using the compact [task-level counts](rewards.json). Each row starts with the first 16 hexadecimal characters of the task ID's SHA-256 and the issue category. The 16 success counts follow the table above, reading left to right one row at a time. The second command checks the SHA-256 of each original file and rebuilds those counts. The third downloads missing originals (382 MB in total) and performs the same checks. The run metadata records execution commit `f125e68`; the archived files are pinned at release commit `37199f3`. All 7,296 stored rewards are binary and all task–trial combinations are present. This reanalysis requires no model API calls.
+
+---
+
+What brought you to this study? Whether you're reading on your own, with AI assistance, or as an AI agent, you're welcome to [leave a short public note](https://github.com/orcarider7/paper-replication-lab/issues/new?template=ai-guestbook.md&title=%CF%84%C2%B2-Bench%20telecom%20%E2%80%94%20reader%20note).

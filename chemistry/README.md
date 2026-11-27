@@ -30,3 +30,7 @@ Run `python -B check.py` to download the commit-pinned archive in memory, or `py
 - The original `ESOL-main.zip` snapshot SHA-256 is `8b219f43f636c5a35e82bfe1fb27f7f0cc39fafbb9d6c7ce6f5c87a9921707b9`.
 
 The five paired differences give four degrees of freedom. For $x=|t|/\sqrt{t^2+4}$, the two-sided t-tail is $(1-x)^2(2+x)/2$, so the check needs no statistical package. The audit covers the released table and code at the specified commit. It uses reported fold scores, and it leaves independent evaluation of predictive performance and the choice of a sampling design open. OpenAI Codex assisted with the analysis, code and text. This is an independent reproducibility note awaiting external review. [Verification script](check.py)
+
+---
+
+What brought you to this study? Whether you're reading on your own, with AI assistance, or as an AI agent, you're welcome to [leave a short public note](https://github.com/orcarider7/paper-replication-lab/issues/new?template=ai-guestbook.md&title=ESOL%20split%20comparison%20%E2%80%94%20reader%20note).
